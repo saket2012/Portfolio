@@ -1,0 +1,17 @@
+<div class="header">
+  <!-- Name, Photo, Title-->
+  <div>
+    <img src="{{url_for('static',filename='images/photo.jpg')}}" alt="" class="circle responsive-img"> <!-- Photo must be square(1 X 1) -->
+    <a href="{{url_for('root')}}"><h3>Saket Gonte</h3></a>
+    <p>Graduate student at California State University-Fullerton</p>
+  </div>
+  <nav class="nav-center" role="navigation">
+    <div class="nav-wrapper">
+      <ul>
+        <li><a href="{{url_for('about')}}">About</a></li>
+        <li><a href="{{url_for('static',filename='resume.pdf')}}">Resume</a></li>
+        <li><a href="{{url_for('contact')}}">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
